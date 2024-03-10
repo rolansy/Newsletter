@@ -74,7 +74,7 @@ msgalt=MIMEMultipart('alternative')
 msgroot.attach(msgalt)
 
 #html embedding
-with open(r'D:\NetX\Newsletter\index.html', 'r') as f:
+with open(r'D:\NetX\Newsletter\index.html', 'r',encoding='utf-8') as f:
     html_content = f.read()
 # Create a MIMEText object with the HTML content
 msghtml = MIMEText(html_content, 'html')
