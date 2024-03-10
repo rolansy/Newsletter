@@ -68,10 +68,19 @@ msgroot['From']=efrom
 msgroot['To']=efrom
 msgroot.preamble='This is a multi-part message in MIME format.'
 
+
+
 msgalt=MIMEMultipart('alternative')
 msgroot.attach(msgalt)
 
-msghtml=MIMEText(htmlnx, 'html')
+#html embedding
+with open(r'D:\NetX\Newsletter\index.html', 'r',encoding='utf-8') as f:
+    html_content = f.read()
+# Create a MIMEText object with the HTML content
+msghtml = MIMEText(html_content, 'html')
+
+
+#msghtml=MIMEText(htmlnx, 'html')
 msgalt.attach(msghtml)
 
 fp=open(newsimg, 'rb')
