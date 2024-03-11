@@ -5,7 +5,7 @@ from email.mime.image import MIMEImage
 
 efrom="thenetxnewsletter@gmail.com"
 passw="aoihclfynjgbhpfq"
-msubj="NewsLetter"
+msubj="NewsLetter | NetX MACE"
 tolist="testcsvmail.csv"
 newsimg="newsletterimg.jpg"
 
