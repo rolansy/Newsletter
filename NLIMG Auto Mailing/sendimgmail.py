@@ -13,7 +13,7 @@ with open(tolist) as file:
     reader=csv.reader(file)
     next(reader)
     bcc=[]
-    for name,email in reader:
+    for email in reader:
         bcc.append(email)
 print(bcc)
 
