@@ -60,7 +60,7 @@ efrom="thenetxnewsletter@gmail.com"
 passw="aoihclfynjgbhpfq"
 msubj="NewsLetter"
 tolist=r"D:\NetX\NetXweb\NL Auto Mailing\testcsv.csv"
-newsimg=r"D:\NetX\NetXweb\NL Auto Mailing\Newsletter.png"
+newsimg=r"D:\NetX\Newsletter\public\download-1@2x.png"
 
 msgroot=MIMEMultipart('related')
 msgroot['Subject']=msubj
@@ -87,7 +87,7 @@ fp=open(newsimg, 'rb')
 msgimg1=MIMEImage(fp.read(),_subtype="png")
 fp.close()
 
-msgimg1.add_header('Content-ID', '<image1>')
+msgimg1.add_header('Content-ID', '<downimg>')
 msgroot.attach(msgimg1)
 
 context=ssl.create_default_context()
