@@ -4,9 +4,282 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <title>The NetX Newsletter March</title>
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+      }
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
+      :root {
+        /* fonts */
+        --font-jomhuria: Jomhuria;
+
+        /* font sizes */
+        --font-size-61xl: 80px;
+        --font-size-67xl: 86px;
+        --font-size-91xl: 110px;
+
+        /* Colors */
+        --color-white: #fff;
+        --color-darkslategray: #044d52;
+        --color-black: #000;
+        --color-powderblue: #c7e2db;
+
+        /* Paddings */
+        --padding-88xl: 107px;
+      }
+      .frame-child {
+        align-self: stretch;
+        position: relative;
+        background-color: var(--color-powderblue);
+        height: 93px;
+      }
+      .frame,
+      .rectangle-parent {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      .rectangle-parent {
+        top: 0;
+        width: 2151px;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 2661px 163px 1096px 1254px;
+        box-sizing: border-box;
+        gap: 1067px 0;
+        background-image: url(./public/frame-1@3x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+      .frame {
+        top: 389px;
+        width: 525px;
+        overflow: hidden;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+        font-size: var(--font-size-61xl);
+      }
+      .download-1-icon {
+        align-self: stretch;
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        height: 1476px;
+        flex-shrink: 0;
+        object-fit: cover;
+      }
+      .frame1 {
+        position: absolute;
+        top: 592px;
+        left: 85px;
+        width: 1022px;
+        height: 1435px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .frame-inner {
+        width: 734px;
+        position: relative;
+        background-color: var(--color-powderblue);
+        height: 93px;
+      }
+      .frame2 {
+        position: absolute;
+        top: 637px;
+        left: 0;
+        width: 1989px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .tech-facts {
+        margin: 0;
+        width: 734px;
+        position: relative;
+        font-size: inherit;
+        font-weight: 400;
+        font-family: inherit;
+        display: inline-block;
+        height: 93px;
+        flex-shrink: 0;
+      }
+      .frame3 {
+        position: absolute;
+        top: 637px;
+        left: 0;
+        width: 1989px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+        font-size: var(--font-size-91xl);
+        color: var(--color-black);
+        font-family: var(--font-jomhuria);
+      }
+      .googles-first-tweet {
+        margin-bottom: 0;
+      }
+      .blank-line {
+        margin: 0;
+      }
+      .before-the-original-design-for {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        padding-left: var(--padding-88xl);
+      }
+      .googles-first-tweet-container {
+        width: 833px;
+        position: relative;
+        display: inline-block;
+        height: 1712px;
+        flex-shrink: 0;
+      }
+      .frame4 {
+        position: absolute;
+        top: 778px;
+        left: 0;
+        width: 2002px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: left;
+        font-size: var(--font-size-61xl);
+        color: var(--color-white);
+        font-family: var(--font-jomhuria);
+      }
+      .welcome-to-the-container {
+        align-self: stretch;
+        position: relative;
+      }
+      .frame5,
+      .frame6 {
+        position: absolute;
+        top: 2195px;
+        left: 107px;
+        width: 1000px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .frame6 {
+        top: 2661px;
+        left: 0;
+        width: 1988px;
+        text-align: center;
+        font-size: var(--font-size-91xl);
+        color: var(--color-black);
+        font-family: var(--font-jomhuria);
+      }
+      .httpsgcokgsmkjntzj {
+        color: var(--color-darkslategray);
+      }
+      .philips-college-internships-container {
+        width: 833px;
+        position: relative;
+        display: inline-block;
+        height: 800px;
+        flex-shrink: 0;
+      }
+      .frame7,
+      .frame8 {
+        position: absolute;
+        top: 2850px;
+        left: 0;
+        width: 2002px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: left;
+        font-size: var(--font-size-61xl);
+        color: var(--color-white);
+        font-family: var(--font-jomhuria);
+      }
+      .frame8 {
+        top: 3821px;
+        width: 1988px;
+        text-align: center;
+        font-size: var(--font-size-91xl);
+        color: var(--color-black);
+      }
+      .terzetto-a-design-workshop-co {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        padding-left: 115px;
+      }
+      .frame10,
+      .frame9 {
+        position: absolute;
+        top: 3914px;
+        left: 113px;
+        width: 989px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .frame10 {
+        top: 4771px;
+        left: 165px;
+        width: 910px;
+        font-size: 65px;
+        color: var(--color-black);
+      }
+      .fiction {
+        color: var(--color-white);
+      }
+      .fiction-ram-co-container {
+        width: 833px;
+        position: relative;
+        display: inline-block;
+        height: 695px;
+        flex-shrink: 0;
+      }
+      .desktop-1,
+      .frame11 {
+        overflow: hidden;
+        text-align: left;
+        color: var(--color-white);
+        font-family: var(--font-jomhuria);
+      }
+      .frame11 {
+        position: absolute;
+        top: 4049px;
+        left: 0;
+        width: 2002px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: var(--font-size-61xl);
+      }
+      .desktop-1 {
+        width: 100%;
+        position: relative;
+        background-color: var(--color-white);
+        height: 5010px;
+        font-size: var(--font-size-67xl);
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Jomhuria:wght@400&display=swap"
@@ -22,7 +295,7 @@
         <div class="welcome-to-the-container">Volume 1</div>
       </div>
       <div class="frame1">
-        <img class="download-1-icon" alt="" src="./public/download-1@2x.png" />
+        <img class="download-1-icon" alt="" src="cid:downimg" />
       </div>
       <section class="frame2">
         <div class="frame-inner"></div>
