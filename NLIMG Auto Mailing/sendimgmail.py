@@ -53,6 +53,6 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
     
         
         
-    mailmsg=msgroot.as_string().format(name='Subscriber')
+    mailmsg=msgroot.as_string()
     server.sendmail(efrom, bcc, mailmsg)
     print("Mail sent to All")
